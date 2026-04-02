@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Select Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+h2 {
+    background: #8e44ad;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.boy-btn {
+    background: #007BFF;
+    color: white;
+}
+
+.girl-btn {
+    background: #e83e8c;
+    color: white;
+}
+
+.back-btn {
+    background: #6c757d;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>Select Registration Type</h2>
+
+        <button class="boy-btn" onclick="goToBoy()">Boy Registration</button>
+        <button class="girl-btn" onclick="goToGirl()">Girl Registration</button>
+        <br>
+        <button class="back-btn" onclick="goBack()">⬅ Back</button>
+    </div>
+</div>
+
+<script>
+function goToBoy() {
+    window.location.href = "boy-registration.html";
+}
+
+function goToGirl() {
+    window.location.href = "girl-registration.html";
+}
+
+function goBack() {
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

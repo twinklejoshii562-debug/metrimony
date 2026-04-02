@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Boy Registration Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+    border: 2px solid #cfcfcf;
+}
+
+h2 {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1.5px solid #cfcfcf;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+/* Declaration */
+.declaration-text {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.declaration-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<form onsubmit="return confirm('Are you sure you want to submit the form?');">
+
+<h2>Personal Details</h2>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" required>
+</div>
+
+<div class="form-group">
+<label>Close Pic</label>
+<input type="file">
+</div>
+
+<div class="form-group">
+<label>Full Pic</label>
+<input type="file">
+</div>
+
+<div class="form-group">
+<label>Biodata (PDF)</label>
+<input type="file" accept=".pdf">
+</div>
+
+<div class="form-group">
+<label>Mobile Number Added in Group</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Guardian Mobile Number</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Relationship</label>
+<select>
+<option>Self</option>
+<option>Parent</option>
+<option>Own Sibling</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>First Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Last Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Father's Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Mother's Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Date of Birth</label>
+<input type="date">
+</div>
+
+<div class="form-group">
+<label>Time of Birth</label>
+<input type="time">
+</div>
+
+<div class="form-group">
+<label>Place of Birth</label>
+<input type="text">
+</div>
+
+<h2>Lifestyle Details</h2>
+
+<div class="form-group">
+<label>Do You Smoke?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+<option>Socially</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Do You Drink?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+<option>Socially</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Your Diet</label>
+<select>
+<option>Vegetarian</option>
+<option>Non Vegetarian</option>
+<option>Eggetarian</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Height</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Gothra</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Educational Qualification</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Manglik Dosha</label>
+<select>
+<option>No</option>
+<option>Yes, but negligible</option>
+<option>Yes, Anshika</option>
+<option>Yes, Purna</option>
+<option>Yes, Double</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>I am Living In (City)</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>My Parents are Living In (City)</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Marital Status</label>
+<select>
+<option>Unmarried</option>
+<option>Divorced/Widowed without kids</option>
+<option>Divorced/Widowed with kids</option>
+</select>
+</div>
+
+<h2>Career & Income</h2>
+
+<div class="form-group">
+<label>Primary Source of Income</label>
+<select>
+<option>In Job</option>
+<option>My Owned Business</option>
+<option>I am Professional</option>
+<option>Family Business</option>
+<option>Unemployed</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>If Job</label>
+<select>
+<option>Goes to Office</option>
+<option>Work From Home</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Company Details</label>
+<textarea></textarea>
+</div>
+
+<div class="form-group">
+<label>Business Details</label>
+<textarea></textarea>
+</div>
+
+<div class="form-group">
+<label>Total Annual Income (Lacs)</label>
+<input type="number">
+</div>
+
+<h2>Property Details</h2>
+
+<div class="form-group">
+<label>Nature of Ownership of Home (Where I am Staying)</label>
+<select>
+<option>Owned, no loan</option>
+<option>Owned, but loan taken</option>
+<option>Rented</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Nature of Ownership of Home (Where Parents are Staying)</label>
+<select>
+<option>Owned, no loan</option>
+<option>Owned, but loan taken</option>
+<option>Joint Family Owned</option>
+<option>Rented</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Plan to Move to Parents City?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+<option>I am living with parents</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Your Marriage Budget (Lacs)</label>
+<input type="number">
+</div>
+
+<h2>Family Details</h2>
+
+<div class="form-group">
+<label>Family Status</label>
+<select>
+<option>Lower Lower</option>
+<option>Middle Lower</option>
+<option>Upper Lower</option>
+<option>Lower Middle</option>
+<option>Middle Middle</option>
+<option>Upper Middle</option>
+<option>Middle Upper</option>
+<option>Upper Upper</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>No. of Married Brothers & Sisters</label>
+<input type="number">
+</div>
+
+<div class="form-group">
+<label>No. of Unmarried Brothers & Sisters</label>
+<input type="number">
+</div>
+
+<div class="form-group">
+<label>No. of Dependents on You</label>
+<input type="number">
+</div>
+
+<h2>About You</h2>
+
+<div class="form-group">
+<label>Please Describe Yourself</label>
+<textarea></textarea>
+</div>
+
+<div class="form-group">
+<label>Your Hobbies</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Medical Issues</label>
+<input type="text">
+</div>
+
+<h2>Partner Preference</h2>
+
+<div class="form-group">
+<label>Your Preference for Girl</label>
+<textarea></textarea>
+</div>
+
+<div class="form-group">
+<label>What do you expect your wife to do post marriage?</label>
+<select>
+<option>Continue doing job</option>
+<option>Be a homemaker</option>
+<option>Only work from home</option>
+<option>Engage in family business</option>
+<option>Flexible</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Will you marry divorced/widowed girl?</label>
+<select>
+<option>Yes - without kids</option>
+<option>Yes - with one kid</option>
+<option>Yes - with two kids</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Do you match Kundali?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<h2>Declaration</h2>
+
+<div class="form-group">
+    <p class="declaration-text">I declare above information are true and correct.</p>
+    <div class="declaration-check">
+        <input type="checkbox" id="decl" required>
+        <label for="decl">I Agree</label>
+    </div>
+</div>
+
+<button type="submit">Submit Form</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Girl Registration Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+    border: 2px solid #cfcfcf;
+}
+
+h2 {
+    background: #e83e8c;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1.5px solid #cfcfcf;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+.declaration-text {
+    margin-bottom: 5px;
+}
+
+.declaration-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<form onsubmit="return confirm('Are you sure you want to submit the form?');">
+
+<h2>Personal Details</h2>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" required>
+</div>
+
+<div class="form-group">
+<label>Close Pic</label>
+<input type="file">
+</div>
+
+<div class="form-group">
+<label>Full Pic</label>
+<input type="file">
+</div>
+
+<div class="form-group">
+<label>Biodata (PDF)</label>
+<input type="file" accept=".pdf">
+</div>
+
+<div class="form-group">
+<label>First Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Last Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Date of Birth</label>
+<input type="date">
+</div>
+
+<div class="form-group">
+<label>Time of Birth</label>
+<input type="time">
+</div>
+
+<div class="form-group">
+<label>Place of Birth</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Father's Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Mother's Name</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Educational Qualification</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Manglik Dosha</label>
+<select>
+<option>No</option>
+<option>Yes, but negligible</option>
+<option>Yes, Anshika</option>
+<option>Yes, Purna</option>
+<option>Yes, Double</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Are You a Working Lady?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>If Yes</label>
+<select>
+<option>In Job</option>
+<option>Family Business</option>
+<option>Owned Business</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>If Job</label>
+<select>
+<option>Goes to Office</option>
+<option>Work From Home</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>I am Living In (City)</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>My Parents are Living In (City)</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>My Annual Income (Lacs)</label>
+<input type="number">
+</div>
+
+<div class="form-group">
+<label>Gothra</label>
+<select>
+<option>Airen/Aeron</option>
+<option>Bansal</option>
+<option>Bindal/Vindal</option>
+<option>Bhandal</option>
+<option>Garg</option>
+<option>Goyal/Goel</option>
+<option>Goyan</option>
+<option>Jindal</option>
+<option>Kansal</option>
+<option>Kuchhal</option>
+<option>Madhukul</option>
+<option>Mangal</option>
+<option>Mittal</option>
+<option>Nangal</option>
+<option>Singhal/Singla</option>
+<option>Tayal</option>
+<option>Tingal</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Marital Status</label>
+<select>
+<option>Unmarried</option>
+<option>Divorced/Widowed without kids</option>
+<option>Divorced/Widowed with kid/s</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Height</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Family Status</label>
+<select>
+<option>Lower Lower</option>
+<option>Middle Lower</option>
+<option>Upper Lower</option>
+<option>Lower Middle</option>
+<option>Middle Middle</option>
+<option>Upper Middle</option>
+<option>Lower Upper</option>
+<option>Middle Upper</option>
+<option>Upper Upper</option>
+</select>
+</div>
+
+<h2>Family Details</h2>
+
+<div class="form-group">
+<label>Number of Married Brothers</label>
+<select><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+</div>
+
+<div class="form-group">
+<label>Number of Married Sisters</label>
+<select><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+</div>
+
+<div class="form-group">
+<label>Number of Unmarried Brothers</label>
+<select><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+</div>
+
+<div class="form-group">
+<label>Number of Unmarried Sisters</label>
+<select><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+</div>
+
+<h2>Lifestyle</h2>
+
+<div class="form-group">
+<label>Your Diet</label>
+<select>
+<option>Vegetarian</option>
+<option>Non Vegetarian</option>
+<option>Eggetarian</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Do You Smoke?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+<option>Socially</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Do You Drink?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+<option>Socially</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Are You Addicted to Drugs?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+<option>Socially</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Medical Issues</label>
+<input type="text">
+</div>
+
+<h2>Other Details</h2>
+
+<div class="form-group">
+<label>Mobile Number (Added in Group)</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Guardian Mobile Number</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Candidate Mobile Number (Private)</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Instagram ID</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Marriage Budget (Lacs)</label>
+<input type="number">
+</div>
+
+<div class="form-group">
+<label>Native Place</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Weight (kg)</label>
+<input type="number">
+</div>
+
+<div class="form-group">
+<label>Do You Match Kundali?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<h2>Partner Preference</h2>
+
+<div class="form-group">
+<label>Your Preference for Boy</label>
+<textarea></textarea>
+</div>
+
+<div class="form-group">
+<label>Will You Work After Marriage?</label>
+<select>
+<option>Will continue as usual</option>
+<option>No, I shall be a full time homemaker</option>
+<option>Work from home only</option>
+<option>I am flexible</option>
+<option>I can join family business</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Will You Marry Divorced/Widowed Boy?</label>
+<select>
+<option>Yes with kid/s</option>
+<option>Yes without kid/s</option>
+<option>No</option>
+</select>
+</div>
+
+<h2>About You</h2>
+
+<div class="form-group">
+<label>Please Describe Yourself</label>
+<textarea></textarea>
+</div>
+
+<div class="form-group">
+<label>Your Hobbies</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Any Other Vital Information</label>
+<textarea></textarea>
+</div>
+
+<h2>Declaration</h2>
+
+<div class="form-group">
+    <p class="declaration-text">I declare above information are true and correct.</p>
+    <div class="declaration-check">
+        <input type="checkbox" required>
+        <label>I Agree</label>
+    </div>
+</div>
+
+<button type="submit">Submit Form</button>
+
+</form>
+
+</body>
+</html>
